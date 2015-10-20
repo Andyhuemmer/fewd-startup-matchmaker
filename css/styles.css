@@ -1,46 +1,173 @@
-#container {
+//* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+
+.container {
   width: 960px;
   margin: auto;
 }
 
-header {
-  border: 1px solid black;
+#header {
   background-color: black;
-  height: 200px;
-}
-
-.slogan {
-  border: 1px solid black;
-  background-color: #eee;
-  height: 100px;
   width: 100%;
-}
-
-article {
-  border: 1px solid black;
-  height: 700px;
-  width: 100%;
-  background-image: url("../images/coworking.jpg");
-  background-size: cover;
-}
-
-.match {
-  border: 1px solid black;
-}
-
-.profile {
-  border: 1px solid black;
-}
-
-.developer {
-  border: 1px solid black;
-}
-
-.designer {
-  border: 1px solid black;
-}
-
-footer {
-  border: 1px solid black;
   height: 100px;
+  color: white; 
+  border-bottom: 3px yellow solid;
+}
+
+#tagline {
+  background-color: gray;
+  width: 100%;
+  height: 65px;
+}
+
+#main {
+  width: 100%;
+  height: 550px;
+  background: url("images/coworking.jpg") no-repeat;
+  background-position: right top;
+  background-size: auto;
+}
+
+#header h1 {
+  color: yellow;
+  margin-top: 0;
+  padding: 10px 0px 10px 10px;
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+#actions {
+  height: 270px;
+  width: 100%;
+  padding: 10px;
+}
+
+#footer {
+  background-color: black;
+  width: 100%;
+  height: 45px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.item {
+  width: 200px;
+  float: left;
+  margin-right: 25px;
+  margin-left: 25px;
+  height: 250px;
+  line-height: 1.5;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.itemborder {
+  border-right: 1px black solid;
+  
+}
+
+.itemmain {
+  background-color: white;
+  opacity: 0.8;
+  border: 1px solid black;
+  padding: 30px;
+  width: 260px;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 650px;
+  height: 400px;
+}
+
+
+
+nav {
+  width: 650px;
+  float: right;
+}
+
+
+h2 {
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 26px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: helvetica, sans-serif;
+}
+
+h5 {
+  font-size: 16px;
+  color: white;
+}
+
+#create {
+  background-color: yellow;
+  text-transform: uppercase;
+}
+
+.taste {
+  color: #cccccc;
+  text-decoration: line-through;
+}
+
+.are {
+  text-decoration: underline;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.othernav {
+  font-family: helvetica, sans-serif;
+}
+
+.find {
+text-transform: uppercase;
+font-stretch: condensed;
+font-weight: bold;
+font-family: arial;
+}
+
+.mainbutton {
+  background: yellow;
+  width: 200px;
+}
+
+p {
+  font-size: 24px;
+}
+
+button {
+  width: 200px
 }

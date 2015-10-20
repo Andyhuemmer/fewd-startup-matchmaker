@@ -1,22 +1,81 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="utf-8">
-      <meta name="description" content="Your description goes here">
-      <meta name="keywords" content="one, two, three">
+    <!-- external CSS link -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+    #main {
+      width: 100%;
+      background-image: url("images/coworking.jpg");
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+    </style>
+</head>
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-    
-  </head>
 <body>
-  <header></header>
-  <div class="slogan"></div>
-  <article>
-    <div class="Match"></div>
-  </article>
-  <div class="profile"></div>
-  <div class="developer"></div>
-  <div class="designer"></div>
-  <footer></footer>
+  <div id="header">
+    <div class="container">
+      <h1>Startup Matchmaker</h1>
+      <nav>
+        <a class="find" href="#">Find Developers</a>
+        <a class="find" href="#">Find Designers</a>
+        <a class="othernav" href="#">How it Works</a>
+        <a class="othernav" href="#">Our Team</a>
+        <a class="othernav" href="#">Blog</a>
+      </nav>
+    </div>
+  </div>
+
+  <div id="tagline">
+    <div class="container">
+      <h2>Because two brains <span class="taste">taste</span> <span class="are">are</span> better than one.</h2>
+    </div>
+  </div>
+
+  <div id="main">
+    <div class="container">
+      <div class="meetmatch">
+        <div class="itemmain">
+          <h4>Meet your Match!</h4>
+          <p>Have a great idea for a product, but need help making it a reality? We are here to help. Startup Matchmaker is the best place for designers and developers to find each other</p>
+          <center><button id="create">Create a profile</button></center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="actions">
+    <div class="container">
+      <div class="item">
+        <div class="itemborder">
+          <h3>Create a Profile</h3>
+          <p>Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
+           <center><button id="signup">Sign up now</button></center>
+        </div>
+      </div>
+        <div class="item">
+          <div class="itemborder">
+            <h3>Find a Developer</h3>
+            <p>Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
+            <center><button class="start">Start your search</button></center>
+          </div>
+        </div>
+      <div class="item">
+        <h3>Find a Designer</h3>
+        <p>Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
+        <center><button class="start">Start your search</button>
+          </center>
+      </div>
+    </div>
+  </div>
+
+<div id="footer">
+  <div class="container">
+    <h5>2013 Startup Matchmaker. Made in NY.</h5>
+  </div>
+ </div>
+</div>
 </body>
 </html>
